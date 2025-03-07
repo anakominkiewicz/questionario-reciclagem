@@ -15,9 +15,47 @@
 
     <p>quantos estados tem o Brasil</p>
     <input type="text" name="" id="questao3">
+
+    <p>quantas estações tem o ano</p>
+    <input type="text" name="" id="questao4">
+
+    <p>qual a capital do Rio Grande do Sul</p>
+    <input type="text" name="" id="questao5">
+
+    <button id="verificar">Verificar</button>
+    <script>
+
+        let questao1 = document.getElementById("questao1");
+        let questao2 = document.getElementById("questao2");
+        let questao3 = document.getElementById("questao3");
+        let questao4 = document.getElementById("questao4");
+        let questao5 = document.getElementById("questao5");
+        let botao = document.getElementById("verificar");
+        function verificarRespostas() {
+            let contador = 0;
+
+            if (questao1.value == "Brasilia") {
+                contador++;
+            }
+            if (questao2.value == "Sul") {
+                contador++;
+            }
+            if (questao3.value == "26 e o Distrito Federal") {
+                contador++;
+            }
+            if (questao4.value == "Quatro") {
+                contador++;
+            }
+            if (questao5.value == "Porto Alegre") {
+                contador++;
+            }
+
+            alert(`Totral de acertos ${contador}`);
+            console.log('Aterta '+contador)
+        }
+
+        botao.addEventListener("click", verificarRespostas, false);
+    </script>
 </body>
+
 </html>
-
-<p>quantas estações tem o ano</p>
-<input type="text" name="" id="questao4"
-
